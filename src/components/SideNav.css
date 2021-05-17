@@ -1,0 +1,35 @@
+.SideNav{
+    height: 100%;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.SideNav a{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(87, 87, 87);
+    font-size: 12px;
+}
+.SideNav a:hover{
+    background-color: rgb(29, 29, 29);
+    color: crimson;
+}
+.active{
+    background-color: rgb(29, 29, 29);
+    color: crimson !important;
+}
+.SideNav a:last-child{
+    border-bottom: none;
+}
