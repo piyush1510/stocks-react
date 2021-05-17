@@ -6,7 +6,7 @@ export default class SideNav extends Component {
     render() {
         return (
             <div className="SideNav">
-                <NavLink exact activeClassName="active" to="/">L&T</NavLink>
+                <NavLink exact activeClassName="active" to="/">IBM</NavLink>
                 <NavLink exact activeClassName="active" to="/reliance">Reliance</NavLink>
                 <NavLink exact activeClassName="active" to="/tcs">TCS</NavLink>
                 <NavLink exact activeClassName="active" to="/hdfc">HDFC</NavLink>
