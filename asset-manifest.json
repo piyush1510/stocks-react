@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/stocks-react/static/css/main.841dc588.chunk.css",
+    "main.js": "/stocks-react/static/js/main.6b2ad6a1.chunk.js",
+    "main.js.map": "/stocks-react/static/js/main.6b2ad6a1.chunk.js.map",
+    "runtime-main.js": "/stocks-react/static/js/runtime-main.87254ddc.js",
+    "runtime-main.js.map": "/stocks-react/static/js/runtime-main.87254ddc.js.map",
+    "static/js/2.fa9b64c9.chunk.js": "/stocks-react/static/js/2.fa9b64c9.chunk.js",
+    "static/js/2.fa9b64c9.chunk.js.map": "/stocks-react/static/js/2.fa9b64c9.chunk.js.map",
+    "index.html": "/stocks-react/index.html",
+    "static/css/main.841dc588.chunk.css.map": "/stocks-react/static/css/main.841dc588.chunk.css.map",
+    "static/js/2.fa9b64c9.chunk.js.LICENSE.txt": "/stocks-react/static/js/2.fa9b64c9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87254ddc.js",
+    "static/js/2.fa9b64c9.chunk.js",
+    "static/css/main.841dc588.chunk.css",
+    "static/js/main.6b2ad6a1.chunk.js"
+  ]
+}
