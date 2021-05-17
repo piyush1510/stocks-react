@@ -9,7 +9,7 @@ export default class Chart extends Component {
   constructor(props) {
     super(props);
     this.id = props.id || props.match.params.id;
-    this.state = {labels: [], data: [], colors: [], loaded: false};
+    this.state = {labels: [], data: [], colors: [], loaded: false,err:false};
   }
   componentDidMount() {
     api('TIME_SERIES_MONTHLY', this.id)
@@ -17,6 +17,9 @@ export default class Chart extends Component {
         var labels = [];
         var data = [];
         var colors = ['green'];
+        if(res.data['Error Message']){
+            this.setState({err:true})
+        }
         for (var label in res.data['Monthly Time Series']) {
           labels.push(label);
           data.push(res.data['Monthly Time Series'][label]['1. open']);
@@ -29,13 +32,15 @@ export default class Chart extends Component {
         this.setState({labels, data, colors, loaded: true});
       })
       .catch((err) => {
+        this.setState({err:true})
         console.log(err);
       });
   }
   render() {
     return (
       <div className="chart">
-        {this.state.loaded ? (
+      {this.state.err?<h1 style={{color:"crimson"}}>error</h1>:
+        this.state.loaded ? (
           <Bar
             data={{
               labels: this.state.labels,

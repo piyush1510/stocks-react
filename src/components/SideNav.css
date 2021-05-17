@@ -33,3 +33,16 @@
 .SideNav a:last-child{
     border-bottom: none;
 }
+@media screen and (max-width: 480px) {
+    .SideNav{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      flex-direction: row;
+      width: 90%;
+      height: 40px;
+    }
+    .SideNav a{
+        border: none;
+        height: 100%;
+    }
+  }
